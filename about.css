@@ -1,0 +1,175 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #f2f7fc;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #004080;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-transform: capitalize;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  border-color: #ffd700;}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.about-hero {
+  background-color: #e6f0ff;
+  text-align: center;
+  padding: 60px 10% 40px;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  color: #002f6c;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* About Content Section */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 10%;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #003366;
+}
+
+.about-text p {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-text ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #444;
+}
+
+.about-text li {
+  margin-bottom: 8px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  text-align: center;
+  padding: 20px 10%;
+  margin-top: 40px;
+}
+
+footer p {
+  color: #555;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.socials a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    order: -1;
+  }
+}

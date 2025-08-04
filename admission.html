@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admission - Smart School</title>
+  <link rel="stylesheet" href="admission.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">📘 Smart School</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="admission.html" class="active">Admission</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section class="admission-hero">
+    <h1>Apply for Admission</h1>
+    <p>Join a community of learners and start your journey with Smart School today.</p>
+  </section>
+
+  <section class="admission-form-section">
+    <form class="admission-form" onsubmit="return submitApplication(event)">
+      <input type="text" id="fullName" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <select id="course" required>
+        <option value="">Select Course</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Mobile App Development">Mobile App Development</option>
+      </select>
+      <textarea id="message" placeholder="Tell us why you're applying..." required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+    <footer>
+    <p>© 2023 Smart School. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="https://instagram.com"><img src="images/insta.jpeg" alt="Instagram" /></a>
+      <a href="https://twitter.com"><img src="images/twit.png" alt="Twitter" /></a>
+      <a href="https://linkedin.com"><img src="images/linke.png" alt="LinkedIn" /></a>
+    </div>
+  </footer>
+
+  <script src="admission.js"></script>
+</body>
+</html>

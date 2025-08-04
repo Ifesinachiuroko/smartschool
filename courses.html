@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Courses - Smart School</title>
+  <link rel="stylesheet" href="courses.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">📘 Smart School</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="admission.html">admission</a>
+      <a href="courses.html" class="active">Courses</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">about</a>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section class="courses-hero">
+    <h1>Our Courses</h1>
+    <p>Explore a variety of courses tailored to help you succeed.</p>
+  </section>
+
+  <section class="courses-grid">
+    <div class="course-card">
+      <h3>Web Development</h3>
+      <p>Learn HTML, CSS, JavaScript and more to build modern websites.</p>
+      <button onclick="window.location.href='admission.html'">Enroll</button>
+    </div>
+    
+    <div class="course-card">
+      <h3>Graphic Design</h3>
+      <p>Master tools like Photoshop and Illustrator for stunning visuals.</p>
+      <button onclick="window.location.href='admission.html'">Enroll</button>
+
+    </div>
+    <div class="course-card">
+      <h3>Data Science</h3>
+      <p>Dive into data analytics, machine learning, and Python programming.</p>
+      <button onclick="window.location.href='admission.html'">Enroll</button>
+
+    </div>
+    <div class="course-card">
+      <h3>Mobile App Development</h3>
+      <p>Create Android and iOS apps using Flutter and React Native.</p>
+      <button onclick="window.location.href='admission.html'">Enroll</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2023 Smart School. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="https://instagram.com"><img src="images/insta.jpeg" alt="Instagram" /></a>
+      <a href="https://twitter.com"><img src="images/twit.png" alt="Twitter" /></a>
+      <a href="https://linkedin.com"><img src="images/linke.png" alt="LinkedIn" /></a>
+    </div>
+  </footer>
+
+  <script src="courses.js"></script>
+</body>
+</html>
